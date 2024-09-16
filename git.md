@@ -54,3 +54,7 @@ git init
 ### git log
 
 => dùng để kiểm tra lịch sử commit
+
+### git pull
+
+=> pull code ở repo remote về local
