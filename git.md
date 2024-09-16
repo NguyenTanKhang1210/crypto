@@ -54,3 +54,48 @@ git init
 ### git log
 
 => dùng để kiểm tra lịch sử commit
+
+### git push -u origin <tên nhánh>
+
+=> đưa code lên repo remote
+=> từ lần push code thứ 2: git push
+
+### đưa file từ staging về lại working
+
+git reset
+git restore -S . (Đưa tất cả các file đang ở staging về working)
+
+git restore -S <url file> (Chỉ đưa duy nhất file về working)
+
+### git checkout <url file>
+
+=> đưa 1 file đang chỉnh sửa về trạng thái trước đó
+
+### git checkout -b <tên nhánh>
+
+=> tương đương với 2 lệnh git branch + git switch
+
+### git checkout <tên nhánh>
+
+=> tương đương vs lệnh git switch
+=> dùng để chuyển qua <tên nhánh>
+
+Lưu ý: đi làm thực tế không được push code lên nhánh chính
+
+### branch
+
+// dev => Kiểm thử QA và Dev (dev)
+
+// staging => QA Kiểm thử 1 lần (staging)
+
+// production => end user (main/release)
+
+git branch <tên nhánh>
+=> tạo ra 1 nhánh mới
+=> nhánh mới sẽ chứa toàn bộ code của nhánh đang đứng
+
+git branch -a or git branch
+=>liệt kê tất cả các branch đang có trong repo
+
+git switch <tên nhánh>
+=> chuyển qua nhánh <tên nhánh>
