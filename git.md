@@ -60,6 +60,18 @@ git init
 => đưa code lên repo remote
 => từ lần push code thứ 2: git push
 
+<<<<<<< HEAD
+### đưa file từ staging về lại working
+
+git reset
+git restore -S . (Đưa tất cả các file đang ở staging về working)
+
+git restore -S <url file> (Chỉ đưa duy nhất file về working)
+
+### git checkout <url file>
+
+=> đưa 1 file đang chỉnh sửa về trạng thái trước đó
+=======
 ### Đưa file từ staging về lại working
 
 git reset
@@ -69,6 +81,7 @@ git restore -S <url file> (chỉ đưa duy nhất file về working)
 ### git checkout <url file>
 
 => 1. Đưa 1 file đang dc chỉnh sửa về trạng thái trước đó
+>>>>>>> main
 
 ### git checkout -b <tên nhánh>
 
@@ -76,6 +89,20 @@ git restore -S <url file> (chỉ đưa duy nhất file về working)
 
 ### git checkout <tên nhánh>
 
+<<<<<<< HEAD
+=> tương đương vs lệnh git switch
+=> dùng để chuyển qua <tên nhánh>
+
+Lưu ý: đi làm thực tế không được push code lên nhánh chính
+
+### branch
+
+// dev => Kiểm thử QA và Dev (dev)
+
+// staging => QA Kiểm thử 1 lần (staging)
+
+// production => end user (main/release)
+=======
 => tương đương với lệnh git switch
 => dùng để chuyển qua <tên nhánh>
 
@@ -84,12 +111,21 @@ git restore -S <url file> (chỉ đưa duy nhất file về working)
 //dev => kiểm thử QA và Dev (dev)
 // staging => QA kiểm thử 1 lần (staging)
 //production => end user (main/release)
+>>>>>>> main
 
 git branch <tên nhánh>
 => tạo ra 1 nhánh mới
 => nhánh mới sẽ chứa toàn bộ code của nhánh đang đứng
 
 git branch -a or git branch
+<<<<<<< HEAD
+=>liệt kê tất cả các branch đang có trong repo
+
+git switch <tên nhánh>
+=> chuyển qua nhánh <tên nhánh>
+
+### demo
+=======
 ⇒ Liệt kê tất cả các branch đang có trong repo
 
 git switch <tên nhánh>
@@ -107,3 +143,15 @@ git pull --no-ff
 
 git clone <url repo>
 => dùng để clone source code của 1 repo bất kì
+<<<<<<< HEAD
+
+### git merge <branch>
+
+merge <branch> vào branch hiện tại
+
+1. TH1: merge thành công nếu ko có bất kỳ xung đột (conflict)
+2. TH2: bị xung đột => giải quyết conflict => git add => commit
+   => Nếu merge code mà bị conflict => có thể hủy git merge thông qua lệnh: git merge --abort
+=======
+>>>>>>> main
+>>>>>>> f7513df27513059c85d5fdabb0f75e7adf441f74
