@@ -55,6 +55,55 @@ git init
 
 => dùng để kiểm tra lịch sử commit
 
+### git push -u origin <tên nhánh>
+
+=> đưa code lên repo remote
+=> từ lần push code thứ 2: git push
+
+### Đưa file từ staging về lại working
+
+git reset
+git restore -S . (Đưa tất cả các file đang ở staging về working)
+git restore -S <url file> (chỉ đưa duy nhất file về working)
+
+### git checkout <url file>
+
+=> 1. Đưa 1 file đang dc chỉnh sửa về trạng thái trước đó
+
+### git checkout -b <tên nhánh>
+
+=> tương đương với 2 lệnh git branch + git switch
+
+### git checkout <tên nhánh>
+
+=> tương đương với lệnh git switch
+=> dùng để chuyển qua <tên nhánh>
+
+### branch
+
+//dev => kiểm thử QA và Dev (dev)
+// staging => QA kiểm thử 1 lần (staging)
+//production => end user (main/release)
+
+git branch <tên nhánh>
+=> tạo ra 1 nhánh mới
+=> nhánh mới sẽ chứa toàn bộ code của nhánh đang đứng
+
+git branch -a or git branch
+⇒ Liệt kê tất cả các branch đang có trong repo
+
+git switch <tên nhánh>
+=> Chuyển qua nhánh <tên nhánh>
+
+git switch <tên nhánh>
+=> Chuyển qua nhánh <tên nhánh>
+
 ### git pull
 
 => pull code ở repo remote về local
+
+git pull --no-ff
+=> fix lỗi git pull không được
+
+git clone <url repo>
+=> dùng để clone source code của 1 repo bất kì
