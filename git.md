@@ -99,3 +99,5 @@ git branch -a or git branch
 
 git switch <tên nhánh>
 => chuyển qua nhánh <tên nhánh>
+
+### demo
